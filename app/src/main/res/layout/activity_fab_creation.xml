@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f1f1"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.arles.lollistore.FabCreationActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="My button" />
+
+    <ImageButton
+        android:id="@+id/custom_fab"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:background="@drawable/oval_shape_ripple"
+        android:elevation="6dp"
+        android:src="@drawable/fab_plus"
+        android:stateListAnimator="@anim/fab_raise"/>
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Library button" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/library_fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fab_plus"
+        app:borderWidth="0dp"
+        app:elevation="6dp"
+        app:fabSize="normal"
+        app:layout_anchorGravity="bottom|right|end"
+        app:pressedTranslationZ="12dp" />
+
+</LinearLayout>
